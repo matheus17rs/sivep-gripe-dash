@@ -102,7 +102,7 @@ section[data-testid="stSidebar"] * {{ color: {TEXTO_CLARO} !important; }}
 .app-header h1 {{
     font-family: 'Syne', sans-serif;
     font-size: 1.6rem;
-    font-weight: 800;
+    font-weight: 600;
     color: #fff;
     margin: 0;
     line-height: 1.1;
@@ -152,7 +152,7 @@ section[data-testid="stSidebar"] * {{ color: {TEXTO_CLARO} !important; }}
 }}
 .styled-table td.uf {{
     font-family: 'Syne', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     color: {LARANJA_CLARO};
     letter-spacing: normal;
     font-stretch: normal;
@@ -282,21 +282,32 @@ pct_out         = total_outro     / total_srag * 100 if total_srag else 0
 
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
+# DEPOIS
 with st.sidebar:
     st.markdown(f"""
     <div style='margin-bottom:1.5rem'>
-        <div style='font-family:Syne,sans-serif;font-size:1.1rem;font-weight:800;color:{LARANJA}'>
+        <div style='font-family:Syne,sans-serif;font-size:1.1rem;font-weight:600;color:{LARANJA}'>
             🫁 SIVEP-Gripe
         </div>
-        <div style='font-size:0.72rem;color:{TEXTO_MUTED};margin-top:0.2rem'>
-            Vigilância Epidemiológica 2026
+        <div style='font-size:0.74rem;color:{TEXTO_MUTED};margin-top:0.2rem'>
+            Vigilância Epidemiológica SRAG 2026
         </div>
     </div>
-    <div style='margin-top:2rem;padding-top:1rem;border-top:1px solid {CINZA_LINHA};
-                font-size:0.68rem;color:{TEXTO_MUTED};line-height:1.6'>
+    <div style='margin-top:1rem;padding-top:1rem;border-top:1px solid {CINZA_LINHA};
+                font-size:0.70rem;color:{TEXTO_MUTED};line-height:1.8'>
         Fonte: SIVEP-Gripe / OpenDataSUS<br>
-        Última SE disponível: <b style='color:{LARANJA_CLARO}'>{ultima_semana}</b><br>
-        Banco vivo — dados sujeitos a revisão
+        Última Semana Epidemiológica disponível: <b style='color:{LARANJA_CLARO}'>{ultima_semana}</b>
+    </div>
+    <div style='margin-top:1rem;padding-top:1rem;border-top:1px solid {CINZA_LINHA};
+                font-size:0.70rem;color:{TEXTO_MUTED};line-height:1.8'>
+        <b style='color:{TEXTO_CLARO}'>Projeto de Exploração de Dados Públicos</b><br>
+        Objetivo: Prova de Conceito<br>
+        Autor: Matheus Rodrigues
+    </div>
+    <div style='margin-top:1rem;padding:0.8rem;background:{FUNDO_CARD};
+                border-left:3px solid {LARANJA};border-radius:4px;
+                font-size:0.65rem;color:{TEXTO_MUTED};line-height:1.6'>
+        ⚠ Os dados contidos nesse dash estão sujeitos à revisão, considere esse ponto ao fazer análises a partir dos mesmos.
     </div>
     """, unsafe_allow_html=True)
 
