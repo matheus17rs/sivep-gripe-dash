@@ -102,7 +102,7 @@ section[data-testid="stSidebar"] * {{ color: {TEXTO_CLARO} !important; }}
 .app-header h1 {{
     font-family: 'Syne', sans-serif;
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 800;
     color: #fff;
     margin: 0;
     line-height: 1.1;
@@ -286,7 +286,7 @@ pct_out         = total_outro     / total_srag * 100 if total_srag else 0
 with st.sidebar:
     st.markdown(f"""
     <div style='margin-bottom:1.5rem'>
-        <div style='font-family:Syne,sans-serif;font-size:1.1rem;font-weight:600;color:{LARANJA}'>
+        <div style='font-family:Syne,sans-serif;font-size:1.1rem;font-weight:800;color:{LARANJA}'>
             🫁 SIVEP-Gripe
         </div>
         <div style='font-size:0.74rem;color:{TEXTO_MUTED};margin-top:0.2rem'>
